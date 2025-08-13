@@ -5,7 +5,7 @@ const experienceSchema = new mongoose.Schema({
     company: String,
     role: String,
     year: String,
-    description: String
+    description: [String]
 })
 
 const experienceModel = mongoose.model("Experience", experienceSchema, "experience");

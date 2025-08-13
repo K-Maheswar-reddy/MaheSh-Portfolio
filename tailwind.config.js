@@ -1,17 +1,15 @@
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // look inside all your React files
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      keyframes:{
-        loop: {
-          "0%": { transform: "translateX(0%)" },  // Start off-screen right
-          "100%": { transform: "translateX(-50%)" } // Exit off-screen left
+      keyframes: {
+        slideRight: {
+          "0%": { transform: "translateX(-100%)" },  // start from left outside
+          "100%": { transform: "translateX(100%)" }, // move to right outside
         },
       },
       animation: {
-        loop: "loop 8s linear infinite",
+        slideRight: "slideRight 35s linear infinite", // animation duration and repeat
       },
     },
   },

@@ -10,7 +10,14 @@ const profileSchema = new mongoose.Schema({
   gmail: String,
   linkedin: String,
   location: String,
-  phone: String
+  phone: String,
+  profileImg: String,
+  about:String,
+  outOfWork: String,
+  codePen: String,
+  sayHello: String,
+  caption: String,
+  capTitle: String
 })
 
 const profileModel = mongoose.model("Profile", profileSchema, "profile");

@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Dynamic Portfolio (MERN Stack)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **fully dynamic, responsive portfolio website** built using the **MERN stack** (MongoDB, Express, React, Node.js) with **TailwindCSS** for styling and smooth scroll navigation.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
+- 📄 Dynamic content fetched from MongoDB Atlas
+- 🎨 Responsive UI with TailwindCSS
+- 🖱️ Smooth scrolling navigation between sections
+- 📌 Active section highlighting on scroll
+- ⚡ Fast loading with minimal dependencies
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
+**Frontend:** React, TailwindCSS, Axios, React Icons  
+**Backend:** Node.js, Express.js, MongoDB, Mongoose  
+**Other Tools:** Git, Postman
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📂 Project Structure
+mern-portfolio/
+│── backend/ # Express API & Mongoose models
+│── public/ # HTML, manifest, favicons
+│── src/ # React components & context
+│── .env # Environment variables (ignored in git)
+│── package.json # Project metadata & dependencies
+│── tailwind.config.js
+│── README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Installation & Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clone the Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+git clone https://github.com/your-username/mern-portfolio.git
+cd mern-portfolio
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install Frontend Dependencies
+npm install
 
-### `npm run eject`
+Install Backend Dependencies
+cd backend
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Setup .env
+Inside backend/ create a .env file:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+PORT=5000
+MONGO_URI=your-mongodb-uri
+Running the App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Run Backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+cd backend
+npm start
+Run Frontend
+ 
+npm start
+Smooth Scroll Navigation
+Implemented using:
 
-## Learn More
+element.scrollIntoView({ behavior: "smooth" });
+Each section has an id matching the navbar button.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Screenshots
+(Add screenshots here after running the project)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+License
+MIT License © 2025 Your Name
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you want, I can also **add emojis for each section title** and a **demo image placeholder** so your GitHub page looks more eye-catching.  
+Do you want me to make that styled version?

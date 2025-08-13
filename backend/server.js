@@ -9,6 +9,7 @@ const skillRoute = require("./routes/skillRoutes");
 const experienceRoute = require("./routes/experienceRoutes");
 const educationRoute = require("./routes/educationRoutes");
 const certificationRoute = require("./routes/certificationsRoutes");
+const sendEmailRoute = require("./routes/sendEmailRoutes")
 
 const app = express();
 
@@ -24,6 +25,7 @@ app.use("/skills", skillRoute);
 app.use("/certifications", certificationRoute);
 app.use("/experience", experienceRoute);
 app.use("/education", educationRoute);
+app.use("send-email", sendEmailRoute)
 
 // connect to mongoDB
 const url = process.env.MONGO_URI;
