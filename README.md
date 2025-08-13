@@ -70,7 +70,7 @@ Screenshots
 (Add screenshots here after running the project)
 
 License
-MIT License © 2025 Your Name
+MIT License © 2025 Maheswar Reddy K 
 
 If you want, I can also **add emojis for each section title** and a **demo image placeholder** so your GitHub page looks more eye-catching.  
 Do you want me to make that styled version?
