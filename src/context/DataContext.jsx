@@ -22,19 +22,19 @@ export function DataProvider({ children }) {
     useEffect(() => {
         async function fetchData() {
             try {
-                const usersData = await axios.get(`${CONFIG.SERVER_URL}/profile`);
+                const usersData = await axios.get(`${CONFIG.SERVER_URL}/api/profile`);
                 setUsers(usersData.data);
 
-                const expData = await axios.get(`${CONFIG.SERVER_URL}/experience`);
+                const expData = await axios.get(`${CONFIG.SERVER_URL}/api/experience`);
                 setExperience(expData.data);
 
-                const skillData = await axios.get(`${CONFIG.SERVER_URL}/skills`);
+                const skillData = await axios.get(`${CONFIG.SERVER_URL}/api/skills`);
                 setSkill(skillData.data);
 
-                const eduData = await axios.get(`${CONFIG.SERVER_URL}/education`);
+                const eduData = await axios.get(`${CONFIG.SERVER_URL}/api/education`);
                 setEducation(eduData.data);
 
-                const certData = await axios.get(`${CONFIG.SERVER_URL}/certifications`);
+                const certData = await axios.get(`${CONFIG.SERVER_URL}/api/certifications`);
                 setCertificate(certData.data);
             } catch (error) {
                 console.error("Error fetching data", error);
